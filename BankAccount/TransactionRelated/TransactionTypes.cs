@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace BankAccount
+﻿namespace BankAccount.TransactionRelated
 {
-    enum TransactionType    //used to determine the transaction symbol in the LogTransaction Method
+    enum TransactionType    
     {
         Deposit, 
         Withdrawal,

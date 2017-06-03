@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankAccount.Processors;
+using System;
 using System.Collections.Generic;
 
 namespace BankAccount
@@ -8,9 +9,9 @@ namespace BankAccount
         static void Main(string[] args)
         {
             var client = new Client("Josie", "Detwiller"); 
-            client.Accounts = CreateAccounts(client.ID);    
+            client.Accounts = CreateAccounts(client.Id);    
 
-            string userInput = string.Empty;  
+            string userInput;  
             UserInteraction.GreetUser(client);
             
             do                                  
@@ -42,13 +43,13 @@ namespace BankAccount
             Exit,
         }
 
-        private static List<Account> CreateAccounts(double clientId)    //this is just a helper method to assign the accounts to the client
-        {                                                               //not all clients will have the same types of accounts
+        private static List<Account> CreateAccounts(double clientId)    
+        {                                                               
             return new List<Account>                                    
             {
-            new Checking(50000, clientId),  //declaring the balance in these accounts for this client
-            new Savings(75000, clientId),   //don't need to name the accounts bc they're disposable variables at this point
-            new Reserve(500, clientId),     //we only want the accounts for this instance of a Client
+            new Checking(50000, clientId),  
+            new Savings(75000, clientId),  
+            new Reserve(500, clientId),     
             };
         }
     }

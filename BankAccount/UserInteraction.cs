@@ -8,10 +8,10 @@ namespace BankAccount
         internal static void GreetUser(Client client)
         {
             Console.WriteLine($"Hello, {client.FirstName} {client.LastName}");
-            Console.WriteLine($"UserID: {client.ID}");
+            Console.WriteLine($"UserID: {client.Id}");
         }
 
-        internal static decimal PromptUserForAmount()   //prompting user for desired amount of transaction(will work for dep or wd)
+        internal static decimal PromptUserForAmount()  
         {
             Console.WriteLine("\nWhat is the amount of your transaction?\n");   
             decimal amount = Convert.ToDecimal(Console.ReadLine());
@@ -30,9 +30,7 @@ namespace BankAccount
             Console.WriteLine("Press 2 to make a WITHDRAWAL");
             Console.WriteLine("Press 3 to  EXIT\n");
 
-            return Console.ReadKey().KeyChar.ToString();    //this will execute after only one key is entered
-
-            
+            return Console.ReadKey().KeyChar.ToString();    
         }
 
         internal static void SayGoodbye()
@@ -53,10 +51,10 @@ namespace BankAccount
             {
                 int selectedAccount = Convert.ToInt16(Console.ReadLine());
 
-                return accounts[selectedAccount - 1];       //returning the account at the index - 1, because the index increments after each loop
+                return accounts[selectedAccount - 1];      
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 Console.WriteLine("Please enter a 1, 2 or 3 to select your account type.");
                 throw;

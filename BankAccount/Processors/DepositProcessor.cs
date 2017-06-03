@@ -1,18 +1,19 @@
-﻿using System;
+﻿using BankAccount.TransactionRelated;
+using System;
 
-namespace BankAccount
+namespace BankAccount.Processors
 {
     class DepositProcessor
     {
-        public static void GetDepositInfo(Client client)    //this method will run when the user chooses to make a deposit
+        public static void GetDepositInfo(Client client)    
         {
-            var account = UserInteraction.PromptUserForAccount(client.Accounts);    //reusable method that obtains the user's desired account to deposit to
-            decimal amount = UserInteraction.PromptUserForAmount();     //reusable method obtaining deposit amount
-            int transactionId = account.Deposit(amount);    //obtains a transactionID and actually adds the money to the balance 
+            var account = UserInteraction.PromptUserForAccount(client.Accounts);    
+            decimal amount = UserInteraction.PromptUserForAmount();     
+            int transactionId = account.Deposit(amount);    
 
-            TransactionLogger.LogTransactions(new TransactionInfo   //calling the LogTransactions method in the TransactionLogger
+            TransactionLogger.LogTransactions(new TransactionInfo   
             {                                                            
-                AccountNumber = client.ID,                     
+                AccountNumber = client.Id,                     
                 AccountType = account.Type,                                     
                 TransactionAmount = amount,
                 TransactionDate = DateTime.Now,

@@ -54,3 +54,17 @@ Transaction Date: 3/13/2017 11:13:51 PM
 
 
 
+Account Holder: Josie Detwiller
+
+Account Number: 392457
+Account Type: Checking
+Transaction Id: 6811
+Transaction Type: Deposit
+Beginning Account Balance: $50,000.00
+Transaction Amount: +$1.00
+Ending Account Balance: $50,001.00
+Transaction Date: 6/2/2017 10:52:39 PM
+
+
+
+

@@ -68,3 +68,17 @@ Transaction Date: 3/13/2017 11:20:18 PM
 
 
 
+Account Holder: Josie Detwiller
+
+Account Number: 392457
+Account Type: Savings
+Transaction Id: 2481
+Transaction Type: Withdrawal
+Beginning Account Balance: $75,000.00
+Transaction Amount: -$2.00
+Ending Account Balance: $74,998.00
+Transaction Date: 6/2/2017 10:52:46 PM
+
+
+
+

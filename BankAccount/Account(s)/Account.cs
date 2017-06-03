@@ -2,26 +2,24 @@
 
 namespace BankAccount
 {
-    public abstract class Account       //This base class is abstract because it is never to be instantiated itself
+    public abstract class Account    
     {                                       
-        public double AccountNumber { get; set; }   //Property shortcuts
+        public double AccountNumber { get; set; }   
         public decimal Balance { get; set; }
-        public double ClientID { get; set; }
+        public double ClientId { get; set; }
         public string Type { get; set; }
 
-        public Account(decimal balance, double clientID)    //Base constructor
+        public Account(decimal balance, double clientId)    
         {
             Balance = balance;
-            ClientID = clientID;
+            ClientId = clientId;
         }
-
-        public int Deposit(decimal amount) //this is the actual deposit method
+        public int Deposit(decimal amount) 
         {
             Balance += amount;
-            return new Random().Next(6000, 7000);  //assigning a random number for a transactionID. 
+            return new Random().Next(6000, 7000); 
         }
-
-        public int Withdrawal(decimal amount)   //this is the actual withdrawal method
+        public int Withdrawal(decimal amount)   
         {
             if (Balance - amount < 0)
             {

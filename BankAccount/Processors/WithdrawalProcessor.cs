@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankAccount.TransactionRelated;
+using System;
 
 namespace BankAccount
 {
@@ -12,7 +13,7 @@ namespace BankAccount
 
             TransactionLogger.LogTransactions(new TransactionInfo   //this will call the LogTransactions method and populate it with
             {                                                           //all the transaction specifics we will want when printing our 
-                AccountNumber = client.ID,                      //details to the txt file later. It will run and update with 
+                AccountNumber = client.Id,                      //details to the txt file later. It will run and update with 
                 AccountType = account.Type,                                     //every withdrawal made 
                 TransactionAmount = amount,
                 TransactionDate = DateTime.Now,

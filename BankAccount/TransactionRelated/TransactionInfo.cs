@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace BankAccount
+namespace BankAccount.TransactionRelated
 {
-    public class TransactionInfo        //this class was created to set and log the properties for every transaction
+    public class TransactionInfo       
     {
         public double AccountNumber { get; set; }
         public DateTime TransactionDate { get; set; }

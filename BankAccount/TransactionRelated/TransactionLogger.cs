@@ -1,4 +1,4 @@
-﻿using System;
+﻿using BankAccount.TransactionRelated;
 using System.IO;
 
 namespace BankAccount
@@ -15,7 +15,7 @@ namespace BankAccount
             logFile.WriteLine($"Account Holder: {logInfo.UserFullName}\n");
             logFile.WriteLine($"Account Number: {logInfo.AccountNumber}");
             logFile.WriteLine($"Account Type: {logInfo.AccountType}");
-            logFile.WriteLine($"Transaction ID: {logInfo.TransactionId}");
+            logFile.WriteLine($"Transaction Id: {logInfo.TransactionId}");
             logFile.WriteLine($"Transaction Type: {logInfo.TransactionType}");
             var transactionSymbol = logInfo.TransactionType == TransactionType.Deposit.ToString() ? "+" : "-";  
             var beginningBalance = transactionSymbol == "+" ? (logInfo.Balance - logInfo.TransactionAmount) : (logInfo.Balance + logInfo.TransactionAmount);   

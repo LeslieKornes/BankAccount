@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BankAccount
+﻿namespace BankAccount
 {
-    public class Checking : Account     //derived class
+    public class Checking : Account   
     {
-        public Checking(decimal balance, double clientID) : base(balance, clientID)
+        public Checking(decimal balance, double clientId) : base(balance, clientId)
         {
             Type = "Checking";
         }
