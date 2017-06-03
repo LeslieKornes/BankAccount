@@ -1,0 +1,14 @@
+Account Holder: Josie Detwiller
+
+Account Number: 392457
+Account Type: Reserve
+Transaction ID: 2728
+Transaction Type: Deposit
+Beginning Account Balance: $494.00
+Transaction Amount: +$3.00
+Ending Account Balance: $497.00
+Transaction Date: 3/13/2017 11:13:59 PM
+
+
+
+
